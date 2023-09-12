@@ -68,6 +68,7 @@ export class App extends Component {
     }));
   };
 
+
   render() {
     const { contacts, filter } = this.state;
     const filteredContacts = this.filterContacts(contacts, filter);
@@ -84,6 +85,7 @@ export class App extends Component {
           onDeleteContact={this.handleDeleteContact}
         />
         </Section>
+        
         <ToastContainer />
         <GlobalStyle />
       </Layout>
